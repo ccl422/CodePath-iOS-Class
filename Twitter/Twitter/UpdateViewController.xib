@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateViewController">
+            <connections>
+                <outlet property="nameLabel" destination="QNG-Sf-wzz" id="2eY-tG-meu"/>
+                <outlet property="profileImageView" destination="cbc-vH-uuO" id="EK9-Rg-NLD"/>
+                <outlet property="screenNameLabel" destination="KTB-HD-JqJ" id="BzW-zk-pad"/>
+                <outlet property="updateTextView" destination="lkO-by-RLu" id="jlK-J1-Wsg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbc-vH-uuO">
+                    <rect key="frame" x="8" y="72" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="l6q-iX-CSS"/>
+                        <constraint firstAttribute="width" constant="48" id="zu7-Ge-Ng4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTB-HD-JqJ">
+                    <rect key="frame" x="64" y="96" width="528" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkO-by-RLu">
+                    <rect key="frame" x="8" y="128" width="584" height="464"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNG-Sf-wzz">
+                    <rect key="frame" x="64" y="72" width="528" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lkO-by-RLu" secondAttribute="trailing" constant="345" id="51k-DC-OFf"/>
+                <constraint firstItem="cbc-vH-uuO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="Ayl-aR-f4q"/>
+                <constraint firstItem="lkO-by-RLu" firstAttribute="top" secondItem="cbc-vH-uuO" secondAttribute="bottom" constant="8" id="JBS-Zu-qeR"/>
+                <constraint firstItem="KTB-HD-JqJ" firstAttribute="leading" secondItem="cbc-vH-uuO" secondAttribute="trailing" constant="8" id="KUr-Ja-miM"/>
+                <constraint firstItem="lkO-by-RLu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="NDs-06-aw0"/>
+                <constraint firstAttribute="trailing" secondItem="KTB-HD-JqJ" secondAttribute="trailing" constant="8" id="fiv-ux-x4N"/>
+                <constraint firstItem="QNG-Sf-wzz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="gYN-mH-0fB"/>
+                <constraint firstAttribute="trailing" secondItem="lkO-by-RLu" secondAttribute="trailing" constant="8" id="iRo-o2-fdi"/>
+                <constraint firstAttribute="bottom" secondItem="lkO-by-RLu" secondAttribute="bottom" constant="8" id="kHy-Ch-fia"/>
+                <constraint firstItem="lkO-by-RLu" firstAttribute="top" secondItem="cbc-vH-uuO" secondAttribute="bottom" constant="25" id="kIy-Lb-eCF"/>
+                <constraint firstItem="QNG-Sf-wzz" firstAttribute="leading" secondItem="cbc-vH-uuO" secondAttribute="trailing" constant="8" id="n4I-le-pyK"/>
+                <constraint firstItem="KTB-HD-JqJ" firstAttribute="top" secondItem="QNG-Sf-wzz" secondAttribute="bottom" constant="8" id="sMP-RE-eFV"/>
+                <constraint firstAttribute="bottom" secondItem="lkO-by-RLu" secondAttribute="bottom" constant="391" id="sms-JE-dF8"/>
+                <constraint firstItem="cbc-vH-uuO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vLf-lS-bB1"/>
+                <constraint firstItem="lkO-by-RLu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="x4d-BZ-eIl"/>
+                <constraint firstAttribute="trailing" secondItem="QNG-Sf-wzz" secondAttribute="trailing" constant="8" id="z3W-DL-xPs"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="51k-DC-OFf"/>
+                    <exclude reference="NDs-06-aw0"/>
+                    <exclude reference="kIy-Lb-eCF"/>
+                    <exclude reference="sms-JE-dF8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
