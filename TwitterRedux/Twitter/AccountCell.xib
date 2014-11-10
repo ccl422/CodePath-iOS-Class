@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="AccountCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PDu-qi-b1Z">
+                        <rect key="frame" x="8" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="FTN-tK-XvT"/>
+                            <constraint firstAttribute="width" constant="48" id="Kwi-ki-WhK"/>
+                            <constraint firstAttribute="width" constant="48" id="L0D-6V-usu"/>
+                            <constraint firstAttribute="height" constant="48" id="iYa-AI-1C5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FTN-tK-XvT"/>
+                                <exclude reference="L0D-6V-usu"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvA-DT-WwV">
+                        <rect key="frame" x="64" y="32" width="248" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqG-bI-Z25">
+                        <rect key="frame" x="64" y="8" width="248" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BvA-DT-WwV" secondAttribute="trailing" constant="8" id="BMX-Rs-ZEr"/>
+                    <constraint firstItem="BvA-DT-WwV" firstAttribute="leading" secondItem="PDu-qi-b1Z" secondAttribute="trailing" constant="8" id="EdF-KM-1ve"/>
+                    <constraint firstItem="BvA-DT-WwV" firstAttribute="top" secondItem="VqG-bI-Z25" secondAttribute="bottom" constant="8" id="Eqs-Aq-6t7"/>
+                    <constraint firstItem="VqG-bI-Z25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="GVj-Jh-Yy5"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PDu-qi-b1Z" secondAttribute="bottom" constant="8" id="Gby-cH-ArG"/>
+                    <constraint firstItem="VqG-bI-Z25" firstAttribute="leading" secondItem="PDu-qi-b1Z" secondAttribute="trailing" constant="8" id="PVF-Kg-y0V"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="PDu-qi-b1Z" secondAttribute="bottom" constant="8" id="Qgn-P8-4uE"/>
+                    <constraint firstItem="VqG-bI-Z25" firstAttribute="leading" secondItem="PDu-qi-b1Z" secondAttribute="trailing" constant="8" id="XWx-7Q-ekt"/>
+                    <constraint firstItem="PDu-qi-b1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Y8t-4U-arh"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BvA-DT-WwV" secondAttribute="bottom" constant="8" id="cpg-8k-F2n"/>
+                    <constraint firstItem="VqG-bI-Z25" firstAttribute="leading" secondItem="PDu-qi-b1Z" secondAttribute="trailing" constant="8" id="eDM-rU-Z2e"/>
+                    <constraint firstAttribute="trailing" secondItem="VqG-bI-Z25" secondAttribute="trailing" constant="8" id="iNY-3c-UZV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VqG-bI-Z25" secondAttribute="trailing" constant="8" id="jQE-YW-SHa"/>
+                    <constraint firstItem="PDu-qi-b1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="oeb-Y3-1DR"/>
+                    <constraint firstItem="PDu-qi-b1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pGp-hb-qlk"/>
+                    <constraint firstItem="BvA-DT-WwV" firstAttribute="leading" secondItem="PDu-qi-b1Z" secondAttribute="trailing" constant="8" id="qcI-Bk-cMX"/>
+                    <constraint firstItem="VqG-bI-Z25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tOp-ps-Jhq"/>
+                    <constraint firstItem="PDu-qi-b1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="tuU-I7-hQW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Qgn-P8-4uE"/>
+                        <exclude reference="oeb-Y3-1DR"/>
+                        <exclude reference="tuU-I7-hQW"/>
+                        <exclude reference="GVj-Jh-Yy5"/>
+                        <exclude reference="PVF-Kg-y0V"/>
+                        <exclude reference="eDM-rU-Z2e"/>
+                        <exclude reference="jQE-YW-SHa"/>
+                        <exclude reference="qcI-Bk-cMX"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="VqG-bI-Z25" id="F5X-hV-zhp"/>
+                <outlet property="profileImageView" destination="PDu-qi-b1Z" id="nxX-ly-upN"/>
+                <outlet property="screenNameLabel" destination="BvA-DT-WwV" id="V5p-rc-ldb"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="350.5"/>
+        </tableViewCell>
+    </objects>
+</document>

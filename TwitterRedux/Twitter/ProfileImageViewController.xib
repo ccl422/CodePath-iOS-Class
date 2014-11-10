@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileImageViewController">
+            <connections>
+                <outlet property="backgroundImageView" destination="pfi-lc-MtD" id="xHe-K8-aST"/>
+                <outlet property="nameLabel" destination="DDz-kU-UmL" id="eoZ-IH-n0f"/>
+                <outlet property="profileImageView" destination="eI6-P2-939" id="vwE-y9-DPt"/>
+                <outlet property="screenNameLabel" destination="nMY-co-BoU" id="gFw-c2-4oN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-lc-MtD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eI6-P2-939">
+                    <rect key="frame" x="276" y="60" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="I3y-uW-V3p"/>
+                        <constraint firstAttribute="width" constant="48" id="PrO-ro-a58"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMY-co-BoU">
+                    <rect key="frame" x="8" y="140" width="584" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-kU-UmL">
+                    <rect key="frame" x="8" y="116" width="584" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eI6-P2-939" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="6PL-2Q-jMQ"/>
+                <constraint firstItem="nMY-co-BoU" firstAttribute="top" secondItem="DDz-kU-UmL" secondAttribute="bottom" constant="8" id="73r-Jh-5cl"/>
+                <constraint firstItem="DDz-kU-UmL" firstAttribute="top" secondItem="eI6-P2-939" secondAttribute="bottom" constant="8" id="8IK-l8-rNg"/>
+                <constraint firstItem="nMY-co-BoU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="FWO-aj-P9W"/>
+                <constraint firstItem="pfi-lc-MtD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HPw-Ri-fmW"/>
+                <constraint firstAttribute="bottom" secondItem="pfi-lc-MtD" secondAttribute="bottom" id="YbF-Tx-6jR"/>
+                <constraint firstAttribute="trailing" secondItem="pfi-lc-MtD" secondAttribute="trailing" id="dhB-Xz-UsC"/>
+                <constraint firstItem="pfi-lc-MtD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="isE-Yk-pCA"/>
+                <constraint firstAttribute="trailing" secondItem="DDz-kU-UmL" secondAttribute="trailing" constant="8" id="o3L-dT-S3b"/>
+                <constraint firstAttribute="trailing" secondItem="nMY-co-BoU" secondAttribute="trailing" constant="8" id="utt-nj-eQP"/>
+                <constraint firstItem="DDz-kU-UmL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="yND-rr-xpE"/>
+                <constraint firstAttribute="centerX" secondItem="eI6-P2-939" secondAttribute="centerX" id="zFH-OO-uTN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
